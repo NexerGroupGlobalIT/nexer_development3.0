@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>QuoteTerminalStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QuoteTerminalStatus</shortDescription>
+        <value>Accepted,Denied</value>
+    </labels>
+    <labels>
+        <fullName>Quote_Draft_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quote_Draft_Error_Message</shortDescription>
+        <value>There already exists a quote in Draft Status on this Opportunity. Please check Quote</value>
+    </labels>
+</CustomLabels>

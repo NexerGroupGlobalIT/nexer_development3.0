@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningExperienceTheme xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultBrandingSet>LEXTHEMINGNexerBrandTheme</defaultBrandingSet>
+    <description>Nexer Branding applied to Default Salesforce Theme</description>
+    <masterLabel>Nexer Brand Theme</masterLabel>
+    <shouldOverrideLoadingImage>false</shouldOverrideLoadingImage>
+</LightningExperienceTheme>
