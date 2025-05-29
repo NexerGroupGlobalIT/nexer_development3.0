@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customMetadataTypeRecord>CS_APP__Creditsafe_OAuth__mdt.CS_APP__Creditsafe</customMetadataTypeRecord>
+    <executionUser>ludvig.lindell@nexergroup.com</executionUser>
+    <friendlyName>CreditsafeAuthProvider</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <plugin>CS_APP__CreditsafeAuthProvider</plugin>
+    <providerType>Custom</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+</AuthProvider>

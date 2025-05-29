@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://nexer-group--uat.sandbox.my.salesforce.com/services/oauth2/authorize</authorizeUrl>
+    <consumerKey>3MVG9Yq55Et8XwXMHm5VguhLZwuGdcjHlMmLlDfRXMBOWJf63OWM3hJ51mhI0wwUX1ufg7NhMpM5v7iXjSiZP</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>UAT MCAE Asset Flow Auth</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <providerType>Salesforce</providerType>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <tokenUrl>https://nexer-group--uat.sandbox.my.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

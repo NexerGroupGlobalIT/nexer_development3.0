@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>Steven.GardnerLam@nexergroup.com</contactEmail>
+    <label>HolisticonplWebsite Connector</label>
+    <oauthConfig>
+        <callbackUrl>https://holisticon.pl/wp-admin/options-general.php?page=pardot</callbackUrl>
+        <consumerKey>3MVG94DAZekw5HcusyXky.AYV4kETOfc.e4z5Q6MCFuKtpNMPBEjdhekphov8s4zIh9PC5KEfymLzWOjVU1JY</consumerKey>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>Pardot</scopes>
+        <scopes>SFAP</scopes>
+    </oauthConfig>
+</ConnectedApp>

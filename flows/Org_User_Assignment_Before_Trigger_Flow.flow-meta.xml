@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Is_Role_Changed</name>
+        <label>Is Role Changed?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Role_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Role__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Role__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateRecord</targetReference>
+            </connector>
+            <label>Role Changed</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>OrgName</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Role__c})+&apos; &apos;+{!$Record.User__r.FirstName}</expression>
+    </formulas>
+    <interviewLabel>Org User Assignment Before Trigger Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Org User Assignment Before Trigger Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UpdateRecord</name>
+        <label>Update Record</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>OrgName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <startElementReference>Is_Role_Changed</startElementReference>
+    <status>Draft</status>
+</Flow>

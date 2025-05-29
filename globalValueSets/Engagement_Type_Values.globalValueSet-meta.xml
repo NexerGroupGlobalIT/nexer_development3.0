@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>F-Fixed</fullName>
+        <default>false</default>
+        <label>F-Fixed</label>
+    </customValue>
+    <customValue>
+        <fullName>F_Maintenance</fullName>
+        <default>false</default>
+        <label>F_Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>T&amp;M</fullName>
+        <default>false</default>
+        <label>T&amp;M</label>
+    </customValue>
+    <customValue>
+        <fullName>C-T&amp;M</fullName>
+        <default>false</default>
+        <label>C-T&amp;M</label>
+    </customValue>
+    <customValue>
+        <fullName>C-Ceiling</fullName>
+        <default>false</default>
+        <label>C-Ceiling</label>
+    </customValue>
+    <masterLabel>Engagement Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

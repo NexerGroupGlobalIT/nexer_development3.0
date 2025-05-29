@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formulas>
+        <name>CalculatedSalesPrice</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Duration_In_hrs__c}*({!$Record.PricebookEntry.UnitPrice}-{!$Record.Discount_in_Amount__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Opportunity Product Before Trigger Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Product Before Trigger Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Set Sales Price as Duration and Unit Price</description>
+        <name>Update_Sales_Price</name>
+        <label>Update Sales Price</label>
+        <locationX>572</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>UnitPrice</field>
+            <value>
+                <elementReference>CalculatedSalesPrice</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <startElementReference>Update_Sales_Price</startElementReference>
+    <status>Draft</status>
+</Flow>
